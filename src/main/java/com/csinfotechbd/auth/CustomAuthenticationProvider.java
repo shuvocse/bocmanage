@@ -16,8 +16,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.csinfotechbd.roles.Role;
-import com.csinfotechbd.user.User;
-import com.csinfotechbd.user.UserDao;
+import com.csinfotechbd.users.User;
+import com.csinfotechbd.users.UserDao;
 
 @Component
 public class CustomAuthenticationProvider implements AuthenticationProvider {

@@ -1,4 +1,4 @@
-package com.csinfotechbd.user;
+package com.csinfotechbd.users;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +12,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 
 import com.csinfotechbd.base.BaseProperty;
-import com.csinfotechbd.role.RoleEntity;
+import com.csinfotechbd.roles.Role;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -34,10 +33,6 @@ public class UserEntity extends BaseProperty{
 	@Setter
 	@Getter
 	private String password;
-	@Transient
-	@Setter
-	@Getter
-	private String confirmPassword;
 	@Setter
 	@Getter
 	private String fullName;
@@ -49,6 +44,6 @@ public class UserEntity extends BaseProperty{
 			@JoinColumn(name = "roleId") })
 	@Setter
 	@Getter
-	private List<RoleEntity> roleEntities = new ArrayList<RoleEntity>();
+	private List<Role> roles = new ArrayList<Role>();
 
 }

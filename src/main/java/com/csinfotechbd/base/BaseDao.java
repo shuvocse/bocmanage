@@ -14,8 +14,8 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.csinfotechbd.user.User;
-import com.csinfotechbd.user.User_;
+import com.csinfotechbd.users.User;
+import com.csinfotechbd.users.User_;
 
 /**
  * 
@@ -26,39 +26,5 @@ import com.csinfotechbd.user.User_;
 @Transactional
 public class BaseDao {
 
-	@Autowired
-	private EntityManager entityManager;
-
-	public List<User> findAllUser() {
-		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-		CriteriaQuery<User> query = builder.createQuery(User.class);
-		Root<User> root = query.from(User.class);
-		query.select(root);
-		List<User> users = entityManager.createQuery(query).getResultList();
-		return users;
-	}
-
-	public User findById(long id) {
-		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-		CriteriaQuery<User> query = builder.createQuery(User.class);
-		Root<User> root = query.from(User.class);
-		query.select(root);
-		query.where(builder.equal(root.get(User_.id), id));
-		User user = entityManager.createQuery(query).getSingleResult();
-		return user;
-	}
-
-	public void saveUser(User user) {
-		entityManager.persist(user);
-	}
-
-	public void updateUser(User user) {
-		User u = entityManager.find(User.class, user.getUserId());
-		u.setFirstName("ABC");
-		entityManager.flush();
-	}
-
-	public void deleteUser(User user) {
-		entityManager.remove(user);
-	}
+	
 }

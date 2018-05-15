@@ -34,14 +34,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 
-		http.formLogin().authenticationDetailsSource(authenticationDetailsSource).failureUrl("/?error").successHandler(customLoginSuccessHandler).loginPage("/").permitAll()
+		http.formLogin().failureUrl("/?error").successHandler(customLoginSuccessHandler).loginPage("/").permitAll()
 				.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-				.logoutSuccessHandler(customLogouthandler).permitAll()/*.and().addFilterBefore(authenticationFilter(), UsernamePasswordAuthenticationFilter.class)*/;
-				/* .logoutSuccessUrl("/") *//*
-											 * .deleteCookies("JSESSIONID","_ga"
-											 * ,"_gid","_gat")
-											 */
-				
+				.logoutSuccessHandler(customLogouthandler).permitAll();
 
 		http.authorizeRequests().antMatchers("/**")
 				.hasAnyAuthority("ROLE_SUPER_ADMIN", "ROLE_INITIATOR", "ROLE_BRANCH_REVIEWER",

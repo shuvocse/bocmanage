@@ -1,4 +1,4 @@
-package com.csinfotechbd.user;
+package com.csinfotechbd.users;
 
 import java.util.List;
 
