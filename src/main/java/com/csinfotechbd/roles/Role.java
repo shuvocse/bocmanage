@@ -11,7 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import com.csinfotechbd.users.UserEntity;
+import com.csinfotechbd.document.Document;
+import com.csinfotechbd.users.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -36,9 +37,14 @@ public class Role {
 	@Setter
 	@Getter
 	private String description;
-	
 	@Setter
 	@Getter
 	@ManyToMany(mappedBy = "roles", cascade = CascadeType.DETACH)
-	private List<UserEntity> users = new ArrayList<>();
+	private List<User> users = new ArrayList<>();
+
+	@Setter
+	@Getter
+	@ManyToMany(mappedBy = "roles", cascade = CascadeType.DETACH)
+	private List<Document> docs = new ArrayList<>();
+
 }

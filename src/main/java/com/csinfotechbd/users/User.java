@@ -1,47 +1,74 @@
 package com.csinfotechbd.users;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
-
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.*;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 import org.hibernate.annotations.DynamicUpdate;
 
+import com.csinfotechbd.document.Document;
 import com.csinfotechbd.roles.Role;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 /**
  * 
- * @author Emon Hossain
- * Software Engineer,
- * Computer Source Infotech,
- * May 15, 2018 -- 12:55:02 PM,
+ * @author Emon Hossain Software Engineer, Computer Source Infotech, May 15,
+ *         2018 -- 12:55:02 PM,
  */
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 @Entity
-@Table(name = "users")
+@Table(name = "dms_tb_s_users")
 @DynamicUpdate
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Setter
+	@Getter
 	private Integer userId;
 	@Column(length = 50, nullable = false, unique = true)
+	@Setter
+	@Getter
 	private String username;
 	@Column(length = 25, nullable = false)
+	@Setter
+	@Getter
 	private String firstName;
 	@Column(length = 25, nullable = false)
+	@Setter
+	@Getter
 	private String lastName;
+	@Setter
+	@Getter
 	private String password;
+	@Setter
+	@Getter
 	private boolean active;
-	
+	@ManyToMany(fetch = FetchType.LAZY)
+	@JoinTable(name = "dms_tb_j_users_roles", joinColumns = { @JoinColumn(name = "userId") }, inverseJoinColumns = {
+			@JoinColumn(name = "roleId") })
+	@Setter
+	@Getter
 	private List<Role> roles = new ArrayList<>();
+	@Setter
+	@Getter
+	@ManyToMany(mappedBy = "userEntities", cascade = CascadeType.DETACH)
+	private List<Document> docEntities = new ArrayList<>();
 
 	public User(int userId) {
 		this.userId = userId;
