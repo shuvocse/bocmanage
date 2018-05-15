@@ -1,5 +1,7 @@
 package com.csinfotechbd.users;
 
-public interface UserService {
+import com.csinfotechbd.base.BaseService;
+
+public interface UserService extends BaseService{
 
 }

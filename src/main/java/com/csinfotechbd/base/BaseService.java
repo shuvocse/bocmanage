@@ -7,7 +7,7 @@ import java.util.List;
  * @author Emon Hossain Software Engineer, Computer Source Infotech, Aug 24,
  *         2017 -- 2:53:53 PM,
  */
-public interface BlogService {
+public interface BaseService {
 	/**
 	 * 
 	 * @author Emon Hossain
