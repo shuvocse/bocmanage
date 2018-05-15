@@ -12,6 +12,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import com.csinfotechbd.base.BaseProperty;
+import com.csinfotechbd.document.DocumentEntity;
 import com.csinfotechbd.user.UserEntity;
 
 import lombok.Getter;
@@ -36,5 +37,28 @@ public class RoleEntity extends BaseProperty{
 	@Getter
 	@ManyToMany(mappedBy = "roleEntities", cascade = CascadeType.DETACH)
 	private List<UserEntity> userEntities = new ArrayList<>();
+
+	@Setter
+	@Getter
+	@ManyToMany(mappedBy = "roleEntities", cascade = CascadeType.DETACH)
+	private List<DocumentEntity> docEntities = new ArrayList<>();
+	
+	
+
+	public RoleEntity() {
+	}
+
+
+
+	public RoleEntity(String name, String description, List<UserEntity> userEntities,
+			List<DocumentEntity> docEntities) {
+		this.name = name;
+		this.description = description;
+		this.userEntities = userEntities;
+		this.docEntities = docEntities;
+	}
+	
+	
+	
 
 }

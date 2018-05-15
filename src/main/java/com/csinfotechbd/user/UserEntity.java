@@ -3,6 +3,7 @@ package com.csinfotechbd.user;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -15,6 +16,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 import com.csinfotechbd.base.BaseProperty;
+import com.csinfotechbd.document.DocumentEntity;
 import com.csinfotechbd.role.RoleEntity;
 
 import lombok.Getter;
@@ -50,5 +52,27 @@ public class UserEntity extends BaseProperty{
 	@Setter
 	@Getter
 	private List<RoleEntity> roleEntities = new ArrayList<RoleEntity>();
+
+	@Setter
+	@Getter
+	@ManyToMany(mappedBy = "userEntities", cascade = CascadeType.DETACH)
+	private List<DocumentEntity> docEntities = new ArrayList<>();
+	
+	public UserEntity() {
+	}
+
+	public UserEntity(String username, String password, String confirmPassword, String fullName, String email,
+			List<RoleEntity> roleEntities, List<DocumentEntity> docEntities) {
+		this.username = username;
+		this.password = password;
+		this.confirmPassword = confirmPassword;
+		this.fullName = fullName;
+		this.email = email;
+		this.roleEntities = roleEntities;
+		this.docEntities = docEntities;
+	}
+	
+	
+	
 
 }
