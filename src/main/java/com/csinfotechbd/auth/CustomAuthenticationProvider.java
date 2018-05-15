@@ -1,24 +1,58 @@
 package com.csinfotechbd.auth;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import com.csinfotechbd.roles.Role;
+import com.csinfotechbd.user.User;
+import com.csinfotechbd.user.UserDao;
+
 @Component
-public class CustomAuthenticationProvider implements AuthenticationProvider{
+public class CustomAuthenticationProvider implements AuthenticationProvider {
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+	@Autowired
+	private UserDao userDao;
 
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
+
 		String username = authentication.getName();
 		String password = authentication.getCredentials().toString();
-		return new UsernamePasswordAuthenticationToken(null, null, null);
+		User user = userDao.findUserAndRolesByUsername(username);
+
+		if (user == null)
+			return null;
+		else if (new BCryptPasswordEncoder().matches(password, user.getPassword()) && user.isActive() == true) {
+
+			List<Role> roles = user.getRoles();
+			List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+
+			for (Role role : roles) {
+				authorities.add(new SimpleGrantedAuthority(role.getRole()));
+			}
+
+			return new UsernamePasswordAuthenticationToken(user, null, authorities);
+		}
+		return null;
 	}
 
 	@Override
 	public boolean supports(Class<?> authentication) {
 		return authentication.equals(UsernamePasswordAuthenticationToken.class);
 	}
-	
+
 }

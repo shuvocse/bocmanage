@@ -14,22 +14,25 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
 
+/**
+ * 
+ * @author Emon Hossain Software Engineer, Computer Source Infotech, Jul 20,
+ *         2017 -- 3:09:50 PM, Custom build access denied handler to logging the
+ *         user and take action to prevent any consequences
+ */
 @Component
 public class CustomAccessDeniedHandler implements AccessDeniedHandler {
 
-	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response,
 			AccessDeniedException accessDeniedException) throws IOException, ServletException {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-		if (auth != null)
-			logger.debug(
-					"User : " + auth.getName() + "is trying to access un-authorized URL :" + request.getRequestURI());
-		else
-			logger.debug("Anonymous user is trying to access un-authorized URL :" + request.getRequestURI());
-		logger.debug("Conteext path : "+request.getContextPath());
-		response.sendRedirect(request.getContextPath() + "/caution/access-denied");
+		if (auth != null) {
+			log.warn("User : " + auth.getName() + " attempted to access the protected URL:" + request.getRequestURI());
+		}
+		response.sendRedirect(request.getContextPath() + "/user/access-denied");
 	}
 
 }
