@@ -27,14 +27,14 @@ public class CustomLoginSuccessHandler extends SavedRequestAwareAuthenticationSu
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
 
-		String module = ((CustomWebAuthenticationDetails)authentication.getDetails()).getModudleName();
+		//String module = ((CustomWebAuthenticationDetails)authentication.getDetails()).getModudleName();
 		SavedRequest savedRequest = requestCache.getRequest(request, response);
-		request.getSession().setAttribute("module", module);
-		boolean reset = Boolean.parseBoolean(authentication.getCredentials().toString());// authentication.getCredentials();
+		//request.getSession().setAttribute("module", module);
+		/*boolean reset = Boolean.parseBoolean(authentication.getCredentials().toString());// authentication.getCredentials();
 		if (!reset) {
 			response.sendRedirect("user/change-password");
 			
-		}
+		}*/
 		
 		if (savedRequest == null) {
 			super.onAuthenticationSuccess(request, response, authentication);
