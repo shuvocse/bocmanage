@@ -5,11 +5,12 @@ import com.csinfotechbd.rms.setting.columnseShelf.ColumnseShelfEntity;
 import com.csinfotechbd.rms.setting.shelfsBox.ShelfBoxEntity;
 import com.csinfotechbd.rms.setting.warehouse.WarehouseEntity;
 import com.csinfotechbd.rms.setting.zone.ZoneEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
+@Repository
 public class RecordDao {
 
     @SuppressWarnings("unchecked")

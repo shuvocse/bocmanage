@@ -4,10 +4,11 @@ import com.csinfotechbd.rms.setting.center.CenterEntity;
 import com.csinfotechbd.rms.setting.centereasRow.CentereasRowEntity;
 import com.csinfotechbd.rms.setting.columnseShelf.ColumnseShelfEntity;
 import com.csinfotechbd.rms.setting.rowsColumn.RowsColumnEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class ShelfBoxDao {
 
     @SuppressWarnings("unchecked")

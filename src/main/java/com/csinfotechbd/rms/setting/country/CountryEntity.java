@@ -18,18 +18,18 @@ public class CountryEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String cunUniCode;
 
     public CountryEntity(){}
 
-    public CountryEntity(long countryId, String name, String code) {
+    public CountryEntity(long countryId, String cunUnicode, String code) {
         this.countryId = countryId;
-        this.name = name;
-        this.code = code;
+        this.title = title;
+        this.cunUniCode = cunUnicode;
     }
 }

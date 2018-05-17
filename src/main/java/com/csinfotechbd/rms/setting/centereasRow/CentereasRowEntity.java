@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.centereasRow;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.center.CenterEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_center_row")
-public class CentereasRowEntity {
+public class CentereasRowEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -17,24 +18,23 @@ public class CentereasRowEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String rowUniCode;
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "centerId")
-    @Column(nullable = false)
     private CenterEntity centerEntity;
 
     public CentereasRowEntity(){}
-    public CentereasRowEntity(long id, String name, String code, CenterEntity centerEntity) {
+    public CentereasRowEntity(long id, String title, String rowUniCode, CenterEntity centerEntity) {
         this.rowId = id;
-        this.name = name;
-        this.code = code;
+        this.title = title;
+        this.rowUniCode = rowUniCode;
         this.centerEntity = centerEntity;
     }
 
@@ -42,8 +42,8 @@ public class CentereasRowEntity {
     public String toString() {
         return "CentereasRowEntity{" +
                 "rowId=" + rowId +
-                ", name='" + name + '\'' +
-                ", code='" + code + '\'' +
+                ", name='" + title + '\'' +
+                ", code='" + rowUniCode + '\'' +
                 ", centerEntity=" + centerEntity +
                 '}';
     }

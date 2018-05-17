@@ -1,10 +1,11 @@
 package com.csinfotechbd.rms.setting.zone;
 
 import com.csinfotechbd.rms.setting.country.CountryEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class ZoneDao {
 
     @SuppressWarnings("unchecked")

@@ -3,10 +3,11 @@ package com.csinfotechbd.rms.setting.rowsColumn;
 import com.csinfotechbd.rms.setting.center.CenterEntity;
 import com.csinfotechbd.rms.setting.centereasRow.CentereasRowEntity;
 import com.csinfotechbd.rms.setting.warehouse.WarehouseEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class RowsColumnDao {
 
     @SuppressWarnings("unchecked")

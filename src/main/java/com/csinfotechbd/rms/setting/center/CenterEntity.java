@@ -18,25 +18,24 @@ public class CenterEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String centUniCode;
 
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "warehouseId")
-    @Column(nullable = false)
     private WarehouseEntity warehouseEntity;
 
     public CenterEntity(){}
-    public CenterEntity(long id, String name, String code, WarehouseEntity warehouseEntity) {
+    public CenterEntity(long id, String title, String centUniCode, WarehouseEntity warehouseEntity) {
         this.centerId = id;
-        this.name = name;
-        this.code = code;
+        this.title = title;
+        this.centUniCode = centUniCode;
         this.warehouseEntity = warehouseEntity;
     }
 
@@ -44,8 +43,8 @@ public class CenterEntity {
     public String toString() {
         return "CenterEntity{" +
                 "centerId=" + centerId +
-                ", name='" + name + '\'' +
-                ", code='" + code + '\'' +
+                ", name='" + title + '\'' +
+                ", code='" + centUniCode + '\'' +
                 ", warehouseEntity=" + warehouseEntity +
                 '}';
     }

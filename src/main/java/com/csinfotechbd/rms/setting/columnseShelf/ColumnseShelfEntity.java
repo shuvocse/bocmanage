@@ -17,24 +17,23 @@ public class ColumnseShelfEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String shUniCode;
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "columnId")
-    @Column(nullable = false)
     private RowsColumnEntity centerColumnEntity;
 
     public ColumnseShelfEntity(){}
-    public ColumnseShelfEntity(long id, String name, String code, RowsColumnEntity centerColumnEntity) {
+    public ColumnseShelfEntity(long id, String name, String shUniCode, RowsColumnEntity centerColumnEntity) {
         this.shelfId = id;
-        this.name = name;
-        this.code = code;
+        this.title = name;
+        this.shUniCode = shUniCode;
         this.centerColumnEntity = centerColumnEntity;
     }
 
@@ -42,8 +41,8 @@ public class ColumnseShelfEntity {
     public String toString() {
         return "ColumnseShelfEntity{" +
                 "shelfId=" + shelfId +
-                ", name='" + name + '\'' +
-                ", code='" + code + '\'' +
+                ", name='" + title + '\'' +
+                ", code='" + shUniCode + '\'' +
                 ", centerColumnEntity=" + centerColumnEntity +
                 '}';
     }

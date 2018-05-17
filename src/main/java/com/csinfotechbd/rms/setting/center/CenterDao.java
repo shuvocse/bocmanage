@@ -3,10 +3,11 @@ package com.csinfotechbd.rms.setting.center;
 import com.csinfotechbd.rms.setting.country.CountryEntity;
 import com.csinfotechbd.rms.setting.warehouse.WarehouseEntity;
 import com.csinfotechbd.rms.setting.zone.ZoneEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class CenterDao {
 
     @SuppressWarnings("unchecked")

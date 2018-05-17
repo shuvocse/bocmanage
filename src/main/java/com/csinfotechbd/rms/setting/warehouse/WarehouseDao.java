@@ -2,10 +2,11 @@ package com.csinfotechbd.rms.setting.warehouse;
 
 import com.csinfotechbd.rms.setting.country.CountryEntity;
 import com.csinfotechbd.rms.setting.zone.ZoneEntity;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Repository
 public class WarehouseDao {
 
     @SuppressWarnings("unchecked")

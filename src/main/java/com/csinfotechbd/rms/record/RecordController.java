@@ -22,9 +22,24 @@ public class RecordController {
     @Autowired
     private RecordService recordService;
 
+    @GetMapping(value = "/")
+    public String index(){
+        return "rms/record/index";
+    }
+
     @ResponseBody
     @GetMapping(value = "/list", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<RecordEntity>> list(Principal principal, HttpSession session) {
         return new ResponseEntity<>(recordService.getAll(), HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/add")
+    public String createView(){
+        return "rms/record/createView";
+    }
+
+    @GetMapping(value = "/advanceSearch")
+    public String advanceSearch(){
+        return "rms/record/advanceSearch";
     }
 }

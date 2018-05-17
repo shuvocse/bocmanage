@@ -17,26 +17,25 @@ public class ZoneEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String znUniCode;
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "countryId")
-    @Column(nullable = false)
     private CountryEntity countryEntity;
 
 
     public ZoneEntity(){}
 
 
-    public ZoneEntity(long id, String name, String code, CountryEntity countryEntity) {
-        this.name = name;
-        this.code = code;
+    public ZoneEntity(long id, String title, String znUniCode, CountryEntity countryEntity) {
+        this.title = title;
+        this.znUniCode = znUniCode;
         this.countryEntity = countryEntity;
     }
 

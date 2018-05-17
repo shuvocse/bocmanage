@@ -17,25 +17,24 @@ public class RowsColumnEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String clmUniCode;
 
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "rowId")
-    @Column(nullable = false)
     private CentereasRowEntity centerRowEntity;
 
     public RowsColumnEntity(){}
-    public RowsColumnEntity(long id, String name, String code, CentereasRowEntity centerRowEntity) {
+    public RowsColumnEntity(long id, String title, String clmUniCode, CentereasRowEntity centerRowEntity) {
         this.columnId = id;
-        this.name = name;
-        this.code = code;
+        this.title = title;
+        this.clmUniCode = clmUniCode;
         this.centerRowEntity = centerRowEntity;
     }
 }

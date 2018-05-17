@@ -18,33 +18,32 @@ public class WarehouseEntity {
     @Getter
     @Setter
     @Column(nullable = false)
-    private String name;
+    private String title;
     @Getter
     @Setter
     @Column(unique = true)
-    private String code;
+    private String wrhUniCode;
 
     @Getter
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "zoneId")
-    @Column(nullable = false)
     private ZoneEntity zoneEntity;
 
     @Override
     public String toString() {
         return "WarehouseEntity{" +
                 "warehouseId=" + warehouseId +
-                ", name='" + name + '\'' +
-                ", code='" + code + '\'' +
+                ", name='" + title + '\'' +
+                ", code='" + wrhUniCode + '\'' +
                 ", zoneEntity=" + zoneEntity +
                 '}';
     }
     public WarehouseEntity(){}
-    public WarehouseEntity(long id, String name, String code, ZoneEntity zoneEntity) {
+    public WarehouseEntity(long id, String title, String code, ZoneEntity zoneEntity) {
         this.warehouseId = id;
-        this.name = name;
-        this.code = code;
+        this.title = title;
+        this.wrhUniCode = code;
         this.zoneEntity = zoneEntity;
     }
 }

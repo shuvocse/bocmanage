@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.record;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.shelfsBox.ShelfBoxEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "rms_record")
-public class RecordEntity {
+public class RecordEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -38,11 +39,11 @@ public class RecordEntity {
 
     @Getter
     @Setter
-    private String reference;
+    private String recordReference;
 
     @Getter
     @Setter
-    private String comment;
+    private String recordComment;
 
     @Getter
     @Setter
@@ -57,7 +58,6 @@ public class RecordEntity {
     @Setter
     @ManyToOne(optional = true, cascade = {CascadeType.ALL})
     @JoinColumn(name = "boxId")
-    @Column(nullable = false)
     private ShelfBoxEntity shelfBoxEntity;
 
     public RecordEntity(){}
@@ -67,8 +67,8 @@ public class RecordEntity {
         this.title = title;
         this.recordType = recordType;
         this.recordCategory = recordCategory;
-        this.reference = reference;
-        this.comment = comment;
+        this.recordReference = reference;
+        this.recordComment = comment;
         this.lastUpdate = lastUpdate;
         this.lastPrint = lastPrint;
         this.shelfBoxEntity = shelfBoxEntity;
@@ -82,8 +82,8 @@ public class RecordEntity {
                 ", title='" + title + '\'' +
                 ", recordType='" + recordType + '\'' +
                 ", recordCategory='" + recordCategory + '\'' +
-                ", reference='" + reference + '\'' +
-                ", comment='" + comment + '\'' +
+                ", reference='" + recordReference + '\'' +
+                ", comment='" + recordComment + '\'' +
                 ", lastUpdate=" + lastUpdate +
                 ", lastPrint=" + lastPrint +
                 ", shelfBoxEntity=" + shelfBoxEntity +
