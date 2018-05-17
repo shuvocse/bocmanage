@@ -5,8 +5,9 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Join;
+import javax.persistence.criteria.ListJoin;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -59,7 +60,7 @@ public class UserDao {
 		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
 		CriteriaQuery<User> query = builder.createQuery(User.class);
 		Root<User> root = query.from(User.class);
-		Join<User, Role> join = root.join(User_.roles);
+		//ListJoin<User, Role> join = root.join(User_.roles);
 		query.where(builder.equal(root.get(User_.username), username));
 		User user = entityManager.createQuery(query).getSingleResult();
 		return user;

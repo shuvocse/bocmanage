@@ -15,14 +15,12 @@ import com.csinfotechbd.document.Document;
 import com.csinfotechbd.users.User;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
 @Table(name = "dms_tb_s_role")
 public class Role {
@@ -39,7 +37,7 @@ public class Role {
 	private String description;
 	@Setter
 	@Getter
-	@ManyToMany(mappedBy = "roles", cascade = CascadeType.DETACH)
+	@ManyToMany(mappedBy = "roles")
 	private List<User> users = new ArrayList<>();
 
 	@Setter

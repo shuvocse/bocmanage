@@ -30,20 +30,27 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
+		User user = null;
+		
 		String username = authentication.getName();
 		String password = authentication.getCredentials().toString();
-		User user = userDao.findUserAndRolesByUsername(username);
+		
+		try{
+			user = userDao.findUserAndRolesByUsername(username);
+		}catch (Exception ex) {
+			ex.printStackTrace();
+		}
 
 		if (user == null)
 			return null;
 		else if (new BCryptPasswordEncoder().matches(password, user.getPassword()) && user.isActive() == true) {
 
-			List<Role> roles = user.getRoles();
+			//List<Role> roles = user.getRoles();
 			List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
 
-			for (Role role : roles) {
-				authorities.add(new SimpleGrantedAuthority(role.getRole()));
-			}
+			//for (Role role : roles) {
+				authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
+			//}
 
 			return new UsernamePasswordAuthenticationToken(user, null, authorities);
 		}

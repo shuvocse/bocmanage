@@ -6,7 +6,6 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -59,7 +58,7 @@ public class User {
 	@Setter
 	@Getter
 	private boolean active;
-	@ManyToMany(fetch = FetchType.LAZY)
+	@ManyToMany(cascade=CascadeType.DETACH)
 	@JoinTable(name = "dms_tb_j_users_roles", joinColumns = { @JoinColumn(name = "userId") }, inverseJoinColumns = {
 			@JoinColumn(name = "roleId") })
 	@Setter
@@ -67,7 +66,7 @@ public class User {
 	private List<Role> roles = new ArrayList<>();
 	@Setter
 	@Getter
-	@ManyToMany(mappedBy = "userEntities", cascade = CascadeType.DETACH)
+	@ManyToMany(mappedBy = "users", cascade = CascadeType.DETACH)
 	private List<Document> docEntities = new ArrayList<>();
 
 	public User(int userId) {

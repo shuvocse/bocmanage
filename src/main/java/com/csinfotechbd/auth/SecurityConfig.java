@@ -23,8 +23,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private CustomLogouthandler customLogouthandler;
 	
-	@Autowired
-	private CustomWebAuthenticationDetailsSource authenticationDetailsSource;
+/*	@Autowired
+	private CustomWebAuthenticationDetailsSource authenticationDetailsSource;*/
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
