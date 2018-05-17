@@ -46,13 +46,14 @@ public class DocServiceImpl implements DocService{
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	public String saveFile(MultipartFile file){
+	@Override
+	public String saveFile(DocBearer bearer){
+		MultipartFile file = bearer.getFile();
 		String message = null;
 		String generatedName = Generator.generateRandomIdWithSalt();
 		String fileExt = FilenameUtils.getExtension(file.getOriginalFilename());
 		// save image information only to database
-		CompletableFuture<String> imageDb = asyncService.saveImageInfoToDb(file.getOriginalFilename(), generatedName,
+		CompletableFuture<String> imageDb = asyncService.saveImageInfoToDb(bearer.getName(), generatedName,
 				fileExt,file.getSize());
 		@SuppressWarnings("unused")
 		// save image file to system storage
