@@ -13,7 +13,7 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "dms_tb_s_ctg")
-public class DocCategory extends BaseProperty{
+public class DocCategory extends BaseProperty {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Setter
@@ -22,13 +22,17 @@ public class DocCategory extends BaseProperty{
 	@Setter
 	@Getter
 	private String ctgName;
+
 	public DocCategory(Integer ctgId, String ctgName) {
 		this.ctgId = ctgId;
 		this.ctgName = ctgName;
 	}
+
 	public DocCategory() {
 	}
-	
-	
+
+	public DocCategory(Integer ctgId) {
+		this.ctgId = ctgId;
+	}
 
 }

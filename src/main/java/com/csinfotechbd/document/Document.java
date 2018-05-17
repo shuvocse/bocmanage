@@ -20,11 +20,15 @@ import com.csinfotechbd.document.category.DocCategory;
 import com.csinfotechbd.roles.Role;
 import com.csinfotechbd.users.User;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name = "dms_tb_m_docs")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Document extends BaseProperty {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -39,10 +43,10 @@ public class Document extends BaseProperty {
 	private String type;
 	@Setter
 	@Getter
-	private String size;
+	private long size;
 	@Setter
 	@Getter
-	private long trackNo;
+	private String trackNo;
 	@Setter
 	@Getter
 	private String url;
@@ -63,4 +67,17 @@ public class Document extends BaseProperty {
 	@JoinTable(name = "dms_tb_j_doc_users", joinColumns = { @JoinColumn(name = "docId") }, inverseJoinColumns = {
 			@JoinColumn(name = "userId") })
 	private List<User> users = new ArrayList<>();
+
+	public Document(Integer docId, String name, String type, long size, String trackNo, String url,
+			DocCategory docCategory) {
+		this.docId = docId;
+		this.name = name;
+		this.type = type;
+		this.size = size;
+		this.trackNo = trackNo;
+		this.url = url;
+		this.docCategory = docCategory;
+	}
+	
+	
 }
