@@ -39,8 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				.logoutSuccessHandler(customLogouthandler).permitAll();
 
 		http.authorizeRequests().antMatchers("/**")
-				.hasAnyAuthority("ROLE_SUPER_ADMIN", "ROLE_INITIATOR", "ROLE_BRANCH_REVIEWER",
-						"ROLE_BRANCH_VERIFIER", "ROLE_DEPUTY_MANAGER", "ROLE_BRANCH_MANAGER")
+				.hasAnyAuthority("ROLE_ADMIN")
 				// .antMatchers("/manageEmployee/createUser").hasAnyAuthority(Role.ROLE_ADMIN.name(),Role.ROLE_USER.name())
 				.anyRequest().authenticated().and().exceptionHandling().accessDeniedHandler(customAccessDeniedHandler);
 		http.headers().frameOptions().sameOrigin();
