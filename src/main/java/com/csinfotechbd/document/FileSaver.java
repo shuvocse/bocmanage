@@ -1,6 +1,11 @@
 package com.csinfotechbd.document;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,23 +24,11 @@ public class FileSaver {
 	public void saveImageToFolder(MultipartFile file, String generatedName, String ext) {
 
 		String folder = IMAGE_DIRECTORY + File.separator;
-		File temp = new File(folder);
-		
-		if (!temp.exists()) {
-			logger.debug("Status : " + folder + " is not found");
-			temp.mkdirs();
-			logger.debug("Status : " + folder + " creation succesful");
-		}
-
-		String fileNameWithExt = generatedName + "." + ext;
-
 		try {
-			File f2 = new File(folder + fileNameWithExt);
-			logger.debug("Status : File is transfering");
-			file.transferTo(f2);
-			logger.debug("Status : File is transfered");
-		} catch (Exception e) {
-			e.printStackTrace();
+			Path path = Paths.get(folder + generatedName + "." + ext);
+			Files.write(path, file.getBytes(), StandardOpenOption.CREATE_NEW);
+		} catch (IOException ioex) {
+			ioex.printStackTrace();
 		}
 
 	}

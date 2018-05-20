@@ -1,5 +1,6 @@
 package com.csinfotechbd.document;
 
+
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +10,9 @@ import java.util.Map;
 
 import javax.servlet.http.HttpSession;
 
+import javax.websocket.server.PathParam;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +20,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.csinfotechbd.users.User;
 import com.csinfotechbd.users.UserService;
@@ -28,6 +34,7 @@ public class DocController {
 	@Autowired
 	private UserService userService;
 	
+	
 	@GetMapping("/form")
 	public String getDocUploadForm(){
 		return "doc/upload-form";
@@ -36,12 +43,12 @@ public class DocController {
 	@PostMapping("/upload")
 	public String getUploadedDoc(DocBearer bearer){
 		if(bearer != null){
-			System.out.println(bearer.getFile().getContentType());
-			System.out.println(bearer.getFile().getOriginalFilename());
+			docService.saveFile(bearer);
 		}
 		return "/doc/upload-form";
 	}
 	
+
 	@GetMapping("/addUserPer/{id}")
 	public String addUserPermission(Model model,@PathVariable String id, HttpSession session, Principal principal){
 		Document doc = docService.getDocumentWithUser(Integer.parseInt(id));
@@ -94,4 +101,14 @@ public class DocController {
 		model.addAttribute("docList", docService.getAllDocument());
 		return "/doc/doc-list";
 	}
+
+	@GetMapping("/view/{fileId}")
+	@ResponseBody
+	public String getFile(@PathVariable(name="fileId") long fileId){
+		
+		docService.getFile(fileId);
+		return "";
+	}
+	
+
 }
