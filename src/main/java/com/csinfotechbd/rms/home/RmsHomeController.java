@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/rms")
 public class RmsHomeController {
 
-	@GetMapping(value = "/")
+	@GetMapping(value = "/home")
 	public String index(){
 		return "rms/home/index";
 	}

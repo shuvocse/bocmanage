@@ -104,21 +104,31 @@
 
                 <div class="form-group">
                     <label for="exampleInputEmail1">Serial No</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Serial number">
                     <small id="emailHelp" class="form-text text-muted">This serial number must from file and unique</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">File Title</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="File Title">
                 </div>
                 <div class="form-group">
                     <label for="exampleSelect1">Category</label>
                     <select class="form-control" id="exampleSelect1">
-                        <option>Bill</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>Business Letters</option>
+                        <option>Business Reports</option>
+                        <option>Transactional Documents</option>
+                        <option>Financial Documents</option>
+                        <option>Invoice</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleSelect1">Type</label>
+                    <select class="form-control" id="type">
+                        <option>Pdf</option>
+                        <option>Doc</option>
+                        <option>CVS</option>
+                        <option>Other</option>
                     </select>
                 </div>
 
@@ -150,11 +160,12 @@
                 <div class="form-check">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input">
-                        Change Notification
+                        Modify Notification
                     </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary my-1">Save Record</button>
+                <a href="/rms/record/home" class="btn btn-primary" role="button">Back</a>
+                <button type="submit" class="btn btn-success my-1">Save Record</button>
             </form>
 
         </div>

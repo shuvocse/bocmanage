@@ -22,7 +22,7 @@ public class RecordController {
     @Autowired
     private RecordService recordService;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/home")
     public String index(){
         return "rms/record/index";
     }
