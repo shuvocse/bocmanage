@@ -13,6 +13,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class DocServiceImpl implements DocService{
+	@Autowired
+	private DocDao docDao;
 	
 	@Autowired
 	private AsyncFileService asyncService;
@@ -70,6 +72,19 @@ public class DocServiceImpl implements DocService{
 			e.printStackTrace();
 		}
 		return message;
+	}
+
+	public Document getDocsById(int id) {
+		return docDao.getDocsById(id);
+	}
+
+
+	public Document getDocumentWithUser(int id) {
+		return docDao.findDocumentWithUser(id);
+	}
+	
+	public List<Document> getAllDocument(){
+		return docDao.getAllDocument();
 	}
 
 }

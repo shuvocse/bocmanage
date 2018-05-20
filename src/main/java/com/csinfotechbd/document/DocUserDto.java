@@ -15,5 +15,11 @@ public class DocUserDto {
 	@Getter
 	@Setter
 	private HashMap<Integer, String> userId;
+	@Override
+	public String toString() {
+		return "DocUserDto [docId=" + docId + ", name=" + name + ", userId=" + userId + "]";
+	}
+	
+	
 
 }

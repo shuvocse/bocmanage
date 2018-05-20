@@ -8,23 +8,21 @@
 	
 	<div class="login-box-body">
 
-		<form id="frmLogin" th:action="@{/doc/upload}" method="post" enctype="multipart/form-data">
-			<div class="form-group has-feedback">
-				<input type="text" name="name" class="form-control"
-					autocomplete="off"></input> <span
-					class="glyphicon glyphicon-user form-control-feedback"></span>
-			</div>
-			<div class="form-group has-feedback">
-				<input type="text" name="category" class="form-control"
-					></input> <span
-					class="glyphicon glyphicon-lock form-control-feedback"></span>
-			</div>
+		<form id="frmLogin" th:action="@{/doc/addUserPer}" method="post" th:object="${docUserDto}">
+			<input type="hidden" th:field="*{docId}"/>
+			<table>
+				<tr>
+					<td>Doc Name</td>
+					<td th:text="*{name}"></td>
+				</tr>
+				<tr th:each="u : ${user}">
+					
+					<td> <input th:type="checkbox" th:field="*{userId[__${u.userId}__]}" th:value="${u.userId}" ></input>
+                       <span th:text="${u.username}"></span></td>
+				</tr>
+			</table>
 			
-			<div class="form-group has-feedback">
-				<input type="file" name="file" class="form-control"
-					></input> <span
-					class="glyphicon glyphicon-lock form-control-feedback"></span>
-			</div>
+			
 			
 			<div class="row">
 				<!-- /.col -->
