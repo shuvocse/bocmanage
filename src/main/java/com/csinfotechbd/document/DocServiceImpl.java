@@ -1,5 +1,6 @@
 package com.csinfotechbd.document;
 
+import java.io.File;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -7,15 +8,28 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import org.apache.commons.io.FilenameUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.xml.DocumentDefaultsDefinition;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class DocServiceImpl implements DocService{
+public class DocServiceImpl implements DocService {
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+	@Value("${image.location}")
+	private String IMAGE_DIRECTORY;
 	
 	@Autowired
 	private AsyncFileService asyncService;
+	
+	@Autowired
+	private DocDao docdao;
 
 	@Override
 	public <T> List<T> getAll() {
@@ -46,15 +60,16 @@ public class DocServiceImpl implements DocService{
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 	@Override
-	public String saveFile(DocBearer bearer){
+	public String saveFile(DocBearer bearer) {
 		MultipartFile file = bearer.getFile();
 		String message = null;
 		String generatedName = Generator.generateRandomIdWithSalt();
 		String fileExt = FilenameUtils.getExtension(file.getOriginalFilename());
 		// save image information only to database
-		CompletableFuture<String> imageDb = asyncService.saveImageInfoToDb(bearer.getName(), generatedName,
-				fileExt,file.getSize());
+		CompletableFuture<String> imageDb = asyncService.saveImageInfoToDb(bearer.getName(), generatedName, fileExt,
+				file.getSize());
 		@SuppressWarnings("unused")
 		// save image file to system storage
 		CompletableFuture<Void> imageStorage = asyncService.saveImageFileToStorage(file, generatedName, fileExt);
@@ -72,5 +87,20 @@ public class DocServiceImpl implements DocService{
 		}
 		return message;
 	}
+
+	@Override
+	public void getFile(long fileId) {
+		try{
+			Document doc = docdao.findFileByFileId(fileId);
+			String filePath = IMAGE_DIRECTORY+File.separator+doc.getUrl();
+			//asyncService.getFileFromStorage("");
+			System.out.println(filePath);
+		}catch (Exception ex) {
+			
+		}
+		
+	}
+
+
 
 }

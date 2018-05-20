@@ -62,6 +62,8 @@ public class AsyncFileService {
 
 	@Async
 	public CompletableFuture<String> saveImageInfoToDb(String imageName, String generatedName, String ext,long size) {
+		Document doc = new Document(null, imageName, ext, size,UUID.randomUUID().toString(), IMAGE_DIRECTORY+File.separator, new DocCategory(1));
+		doc.setCreatedBy("Emon");
 		docRepository.saveToDb(new Document(null, imageName, ext, size,UUID.randomUUID().toString(), IMAGE_DIRECTORY+File.separator, new DocCategory(1)));
 		return CompletableFuture.completedFuture("images" + File.separator + generatedName);
 	}

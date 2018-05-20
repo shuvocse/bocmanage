@@ -20,12 +20,12 @@ import lombok.Data;
 @Data
 public abstract class BaseProperty {
 	@CreatedBy
-	private int createdBy;
+	private String createdBy;
 	@CreatedDate
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date createdDate;
 	@LastModifiedBy
-	private int modifiedBy;
+	private String modifiedBy;
 	@LastModifiedDate
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date modifiedDate;
