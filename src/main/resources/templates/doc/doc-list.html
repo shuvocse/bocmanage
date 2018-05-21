@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<div >
+<table>
+	<thead>
+		<tr>
+			<th>Doc Id</th>
+			<th>Doc Name</th>
+			<th>Doc Track No.</th>
+			<th>Doc URL</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="d : ${docList}">
+			<td th:text="${d?.docId}"></td>
+			<td th:text="${d?.name}"></td>
+			<td th:text="${d?.trackNo}"></td>
+			<td th:text="${d?.url}"></td>
+			<td><a th:href="@{|/doc/addUserPer/${d.docId}|}" ></i>Add User Permission</a></td>
+		</tr>
+	</tbody>
+	
+</table>
+
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<div class="login-box-body">
+
+		<form id="frmLogin" th:action="@{/doc/addUserPer}" method="post" th:object="${docUserDto}">
+			<input type="hidden" th:field="*{docId}"/>
+			<table>
+				<tr>
+					<td>Doc Name</td>
+					<td th:text="*{name}"></td>
+				</tr>
+				<tr th:each="u : ${user}">
+					
+					<td> <input th:type="checkbox" th:field="*{userId[__${u.userId}__]}" th:value="${u.userId}" ></input>
+                       <span th:text="${u.username}"></span></td>
+				</tr>
+			</table>
+			
+			
+			
+			<div class="row">
+				<!-- /.col -->
+				<div class="col-xs-5">
+					<button type="submit" class="btn btn-primary btn-block btn-flat">Submit</button>
+				</div>
+				
+				<!-- /.col -->
+			</div>
+		</form>
+	</div>
+	
+	
+</body>
+</html>

@@ -5,14 +5,10 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.ListJoin;
 import javax.persistence.criteria.Root;
-import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import com.csinfotechbd.roles.Role;
 
 /**
  * Created by Emon Hossain on 8/24/2017.
@@ -35,9 +31,10 @@ public class UserDao {
 	public User findById(long id) {
 		CriteriaBuilder builder = entityManager.getCriteriaBuilder();
 		CriteriaQuery<User> query = builder.createQuery(User.class);
+		
 		Root<User> root = query.from(User.class);
 		query.select(root);
-		query.where(builder.equal(root.get(User_.id), id));
+		query.where(builder.equal(root.get(User_.userId), id));
 		User user = entityManager.createQuery(query).getSingleResult();
 		return user;
 	}

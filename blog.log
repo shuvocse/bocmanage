@@ -1,0 +1,710 @@
+2018-05-17 11:49:46.210  INFO 7240 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on Emon-Hossain with PID 7240 (E:\projects\managedoc\target\classes started by Emon Hossain in E:\projects\managedoc)
+2018-05-17 11:49:46.226  INFO 7240 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 11:49:46.279  INFO 7240 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50dcf60e: startup date [Thu May 17 11:49:46 BDT 2018]; root of context hierarchy
+2018-05-17 11:49:48.230  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e426f048] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.273  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$7cd4b882] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.282  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.283  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@45007f44' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.290  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$a1a95b34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.300  INFO 7240 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 11:49:48.718  INFO 7240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 11:49:48.825  INFO 7240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 11:49:48.826  INFO 7240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 11:49:48.836  INFO 7240 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\Emon Hossain\AppData\Local\Microsoft\WindowsApps;C:\Users\Emon Hossain\AppData\Roaming\npm;;.]
+2018-05-17 11:49:48.986  INFO 7240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 11:49:48.987  INFO 7240 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2708 ms
+2018-05-17 11:49:50.292  INFO 7240 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-17 11:49:50.542  INFO 7240 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-17 11:49:50.599  INFO 7240 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 11:49:50.620  INFO 7240 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 11:49:50.721  INFO 7240 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-17 11:49:50.724  INFO 7240 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-17 11:49:50.773  INFO 7240 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-17 11:49:50.927  INFO 7240 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 11:49:51.526  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:51.528  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:51.528  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:51.528  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:51.528  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:51.528  WARN 7240 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 11:49:52.073  INFO 7240 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-17 11:49:52.157  INFO 7240 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-17 11:49:52.211  WARN 7240 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [F5317966DA78ED1F6ACA093411A1F1CE]
+2018-05-17 11:49:52.412  INFO 7240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 11:49:52.684  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50dcf60e: startup date [Thu May 17 11:49:46 BDT 2018]; root of context hierarchy
+2018-05-17 11:49:52.738  WARN 7240 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-17 11:49:52.832  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/form],methods=[GET]}" onto public java.lang.String com.csinfotechbd.document.DocController.getDocUploadForm()
+2018-05-17 11:49:52.833  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/upload],methods=[POST]}" onto public java.lang.String com.csinfotechbd.document.DocController.getUploadedDoc(com.csinfotechbd.document.DocBearer)
+2018-05-17 11:49:52.834  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.csinfotechbd.login.LoginController.getSignInPage(java.security.Principal)
+2018-05-17 11:49:52.836  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 11:49:52.837  INFO 7240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 11:49:52.879  INFO 7240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 11:49:52.879  INFO 7240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 11:49:53.846  INFO 7240 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bd30633, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f3d4e30, org.springframework.security.web.header.HeaderWriterFilter@4740c3a9, org.springframework.security.web.csrf.CsrfFilter@2c362c38, org.springframework.security.web.authentication.logout.LogoutFilter@7c4ff46f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a0a9e9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@216f1c5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3beac52, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a079512, org.springframework.security.web.session.SessionManagementFilter@53122598, org.springframework.security.web.access.ExceptionTranslationFilter@5fbe50e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a0bb0f3]
+2018-05-17 11:49:53.952  INFO 7240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-17 11:49:53.975  INFO 7240 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-17 11:49:53.990  INFO 7240 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 11:49:53.992  INFO 7240 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 11:49:53.993  INFO 7240 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 11:49:54.078  INFO 7240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-17 11:49:54.081  INFO 7240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 11:49:54.089  INFO 7240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-17 11:49:54.374 ERROR 7240 --- [restartedMain] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.6.RELEASE.jar:5.0.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243) [spring-boot-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+	at com.csinfotechbd.ManagedocApplication.main(ManagedocApplication.java:10) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_111]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.0.2.RELEASE.jar:2.0.2.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_111]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_111]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_111]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_111]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_111]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	... 19 common frames omitted
+
+2018-05-17 11:49:54.382  INFO 7240 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-05-17 11:49:54.389  WARN 7240 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2018-05-17 11:49:54.390  WARN 7240 --- [localhost-startStop-1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+ java.util.concurrent.LinkedBlockingQueue.poll(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+ java.lang.Thread.run(Unknown Source)
+2018-05-17 11:49:54.424  INFO 7240 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-05-17 11:49:54.427 ERROR 7240 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-05-17 11:49:54.430  INFO 7240 --- [restartedMain] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@50dcf60e: startup date [Thu May 17 11:49:46 BDT 2018]; root of context hierarchy
+2018-05-17 11:49:54.434  INFO 7240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-17 11:49:54.435  INFO 7240 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-17 11:49:54.436  INFO 7240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 11:49:54.438  INFO 7240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-17 11:49:54.445  INFO 7240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-17 12:08:46.977  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on Emon-Hossain with PID 9788 (E:\projects\managedoc\target\classes started by Emon Hossain in E:\projects\managedoc)
+2018-05-17 12:08:46.977  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 12:08:47.024  INFO 9788 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@680758d5: startup date [Thu May 17 12:08:47 BDT 2018]; root of context hierarchy
+2018-05-17 12:08:48.774  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f337bd48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:48.817  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8be58582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:48.826  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:48.827  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@68a06a8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:48.834  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b0ba2834] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:48.846  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:08:49.259  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 12:08:49.337  INFO 9788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 12:08:49.337  INFO 9788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 12:08:49.353  INFO 9788 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_111\bin;C:\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Users\Emon Hossain\AppData\Local\Microsoft\WindowsApps;C:\Users\Emon Hossain\AppData\Roaming\npm;;.]
+2018-05-17 12:08:49.453  INFO 9788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 12:08:49.453  INFO 9788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2429 ms
+2018-05-17 12:08:50.653  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-17 12:08:50.874  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-17 12:08:50.922  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:08:50.939  INFO 9788 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 12:08:51.022  INFO 9788 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-17 12:08:51.024  INFO 9788 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-17 12:08:51.062  INFO 9788 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-17 12:08:51.206  INFO 9788 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 12:08:51.909  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:51.910  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:51.910  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:51.911  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:51.911  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:51.911  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:08:52.188  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-17 12:08:52.257  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-17 12:08:52.501  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:08:52.738  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@680758d5: startup date [Thu May 17 12:08:47 BDT 2018]; root of context hierarchy
+2018-05-17 12:08:52.792  WARN 9788 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-17 12:08:52.856  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/upload],methods=[POST]}" onto public java.lang.String com.csinfotechbd.document.DocController.getUploadedDoc(com.csinfotechbd.document.DocBearer)
+2018-05-17 12:08:52.857  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/form],methods=[GET]}" onto public java.lang.String com.csinfotechbd.document.DocController.getDocUploadForm()
+2018-05-17 12:08:52.859  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.csinfotechbd.login.LoginController.getSignInPage(java.security.Principal)
+2018-05-17 12:08:52.863  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 12:08:52.864  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:08:52.920  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:08:52.920  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:08:53.769  INFO 9788 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c56d63f, org.springframework.security.web.context.SecurityContextPersistenceFilter@eeccfda, org.springframework.security.web.header.HeaderWriterFilter@7d14ebd2, org.springframework.security.web.csrf.CsrfFilter@7c749610, org.springframework.security.web.authentication.logout.LogoutFilter@40b5264f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d969bd1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b4dcfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ea3d277, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f75d6e, org.springframework.security.web.session.SessionManagementFilter@298fac3, org.springframework.security.web.access.ExceptionTranslationFilter@39b2e0e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bb6ce99]
+2018-05-17 12:08:53.867  INFO 9788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-17 12:08:53.885  INFO 9788 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-17 12:08:53.894  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:08:53.895  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:08:53.895  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:08:53.963  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-17 12:08:53.967  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 12:08:53.977  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-17 12:08:54.254  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-17 12:08:54.262  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Started ManagedocApplication in 7.599 seconds (JVM running for 8.215)
+2018-05-17 12:09:17.407  INFO 9788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-17 12:09:17.413  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 12:09:17.430  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-05-17 12:09:18.066  INFO 9788 --- [http-nio-8080-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:09:18.151  INFO 9788 --- [http-nio-8080-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:09:20.896  INFO 9788 --- [http-nio-8080-exec-5] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-17 12:09:21.127  INFO 9788 --- [http-nio-8080-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    644471 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    12592697 nanoseconds spent preparing 1 JDBC statements;
+    4907642 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:09:21.243  INFO 9788 --- [http-nio-8080-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:09:29.953  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/doc/form
+2018-05-17 12:09:29.969  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:29.969  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:29.984  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:29.984  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:29.984  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.000  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.000  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.000  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.000  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.018  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.022  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.022  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.022  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.022  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.037  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.042  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.046  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.050  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.054  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:09:30.059  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@6e5d1bee attempted to access the protected URL:/user/access-denied
+2018-05-17 12:10:55.955  INFO 9788 --- [Thread-8] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@680758d5: startup date [Thu May 17 12:08:47 BDT 2018]; root of context hierarchy
+2018-05-17 12:10:55.969  INFO 9788 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-17 12:10:55.969  INFO 9788 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-17 12:10:55.969  INFO 9788 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:10:55.969  INFO 9788 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-17 12:10:55.984  INFO 9788 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-17 12:10:56.387  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on Emon-Hossain with PID 9788 (E:\projects\managedoc\target\classes started by Emon Hossain in E:\projects\managedoc)
+2018-05-17 12:10:56.387  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 12:10:56.387  INFO 9788 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@140698c2: startup date [Thu May 17 12:10:56 BDT 2018]; root of context hierarchy
+2018-05-17 12:10:57.028  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f337bd48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.032  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8be58582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.034  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.035  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a4e1aad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.038  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b0ba2834] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.039  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:10:57.153  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 12:10:57.155  INFO 9788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 12:10:57.155  INFO 9788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 12:10:57.182  INFO 9788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 12:10:57.183  INFO 9788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 796 ms
+2018-05-17 12:10:57.557  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-05-17 12:10:57.564  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-05-17 12:10:57.572  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:10:57.572  INFO 9788 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 12:10:57.585  INFO 9788 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 12:10:57.698  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:57.700  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:57.700  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:57.701  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:57.701  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:57.701  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:10:58.235  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-17 12:10:58.288  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-17 12:10:58.288  WARN 9788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [5ACD7FD55A87FEBD9164216E566ACDB1]
+2018-05-17 12:10:58.335  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:10:58.404  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@140698c2: startup date [Thu May 17 12:10:56 BDT 2018]; root of context hierarchy
+2018-05-17 12:10:58.404  WARN 9788 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-17 12:10:58.420  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/upload],methods=[POST]}" onto public java.lang.String com.csinfotechbd.document.DocController.getUploadedDoc(com.csinfotechbd.document.DocBearer)
+2018-05-17 12:10:58.420  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/form],methods=[GET]}" onto public java.lang.String com.csinfotechbd.document.DocController.getDocUploadForm()
+2018-05-17 12:10:58.420  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.csinfotechbd.login.LoginController.getSignInPage(java.security.Principal)
+2018-05-17 12:10:58.420  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 12:10:58.420  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:10:58.435  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:10:58.435  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:10:58.674  INFO 9788 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@368d3c49, org.springframework.security.web.context.SecurityContextPersistenceFilter@6750d0e9, org.springframework.security.web.header.HeaderWriterFilter@7435678, org.springframework.security.web.csrf.CsrfFilter@527cf367, org.springframework.security.web.authentication.logout.LogoutFilter@6808232d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9be615d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30122aa5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dff4a49, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1929059, org.springframework.security.web.session.SessionManagementFilter@5202f605, org.springframework.security.web.access.ExceptionTranslationFilter@94bdbd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@505d17f4]
+2018-05-17 12:10:58.689  INFO 9788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-17 12:10:58.689  INFO 9788 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-17 12:10:58.705  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:10:58.705  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:10:58.705  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:10:58.736  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-17 12:10:58.736  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 12:10:58.752  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-17 12:10:58.767  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-17 12:10:58.769  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Started ManagedocApplication in 2.413 seconds (JVM running for 132.723)
+2018-05-17 12:10:58.774  INFO 9788 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-05-17 12:10:59.913  INFO 9788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-17 12:10:59.914  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 12:10:59.917  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 3 ms
+2018-05-17 12:10:59.946  INFO 9788 --- [http-nio-8080-exec-1] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:11:05.785  INFO 9788 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-17 12:11:05.804  INFO 9788 --- [http-nio-8080-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    829512 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1140427 nanoseconds spent preparing 1 JDBC statements;
+    434075 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:11:05.900  INFO 9788 --- [http-nio-8080-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:11:12.438  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/doc/form
+2018-05-17 12:11:12.448  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.448  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.448  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.466  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.471  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.474  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.476  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.476  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.476  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.476  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.476  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.492  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.492  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.502  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.505  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.509  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.512  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.517  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.521  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:12.525  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:43.531  INFO 9788 --- [http-nio-8080-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:11:50.408  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/doc/form
+2018-05-17 12:11:50.418  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.418  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.418  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.434  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.438  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.441  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.444  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.445  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.445  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.445  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.445  WARN 9788 --- [http-nio-8080-exec-7] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.461  WARN 9788 --- [http-nio-8080-exec-8] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.461  WARN 9788 --- [http-nio-8080-exec-10] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.461  WARN 9788 --- [http-nio-8080-exec-9] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.477  WARN 9788 --- [http-nio-8080-exec-1] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.484  WARN 9788 --- [http-nio-8080-exec-3] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.489  WARN 9788 --- [http-nio-8080-exec-4] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.493  WARN 9788 --- [http-nio-8080-exec-2] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.498  WARN 9788 --- [http-nio-8080-exec-5] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:11:50.502  WARN 9788 --- [http-nio-8080-exec-6] c.c.auth.CustomAccessDeniedHandler       : User : com.csinfotechbd.users.User@1b0a68c4 attempted to access the protected URL:/user/access-denied
+2018-05-17 12:13:00.827  INFO 9788 --- [Thread-12] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@140698c2: startup date [Thu May 17 12:10:56 BDT 2018]; root of context hierarchy
+2018-05-17 12:13:00.832  INFO 9788 --- [Thread-12] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-17 12:13:00.832  INFO 9788 --- [Thread-12] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-17 12:13:00.832  INFO 9788 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:13:00.832  INFO 9788 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2018-05-17 12:13:00.832  INFO 9788 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2018-05-17 12:13:01.283  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on Emon-Hossain with PID 9788 (E:\projects\managedoc\target\classes started by Emon Hossain in E:\projects\managedoc)
+2018-05-17 12:13:01.283  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 12:13:01.299  INFO 9788 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77997c8f: startup date [Thu May 17 12:13:01 BDT 2018]; root of context hierarchy
+2018-05-17 12:13:01.820  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f337bd48] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.823  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8be58582] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.824  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.824  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7137db1f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.827  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b0ba2834] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.827  INFO 9788 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 12:13:01.913  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 12:13:01.914  INFO 9788 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 12:13:01.914  INFO 9788 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 12:13:01.928  INFO 9788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 12:13:01.929  INFO 9788 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 630 ms
+2018-05-17 12:13:02.164  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2018-05-17 12:13:02.164  INFO 9788 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2018-05-17 12:13:02.180  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:13:02.180  INFO 9788 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 12:13:02.195  INFO 9788 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.264  WARN 9788 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 12:13:02.596  INFO 9788 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-17 12:13:02.650  INFO 9788 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-17 12:13:02.650  WARN 9788 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [C743AC433F4D24E4D20BF37C138F237E]
+2018-05-17 12:13:02.681  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:13:02.731  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77997c8f: startup date [Thu May 17 12:13:01 BDT 2018]; root of context hierarchy
+2018-05-17 12:13:02.734  WARN 9788 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-17 12:13:02.734  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/upload],methods=[POST]}" onto public java.lang.String com.csinfotechbd.document.DocController.getUploadedDoc(com.csinfotechbd.document.DocBearer)
+2018-05-17 12:13:02.734  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/form],methods=[GET]}" onto public java.lang.String com.csinfotechbd.document.DocController.getDocUploadForm()
+2018-05-17 12:13:02.734  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.csinfotechbd.login.LoginController.getSignInPage(java.security.Principal)
+2018-05-17 12:13:02.734  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 12:13:02.734  INFO 9788 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:13:02.750  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:13:02.750  INFO 9788 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 12:13:02.865  INFO 9788 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31cb3c18, org.springframework.security.web.context.SecurityContextPersistenceFilter@108d6b0e, org.springframework.security.web.header.HeaderWriterFilter@36066d70, org.springframework.security.web.csrf.CsrfFilter@501e390b, org.springframework.security.web.authentication.logout.LogoutFilter@1769baab, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c477653, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75ce9052, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70260e76, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@665caa31, org.springframework.security.web.session.SessionManagementFilter@317aca4b, org.springframework.security.web.access.ExceptionTranslationFilter@33dadf82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@520cdfeb]
+2018-05-17 12:13:02.881  INFO 9788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-17 12:13:02.881  INFO 9788 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-17 12:13:02.896  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:13:02.896  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 12:13:02.896  INFO 9788 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 12:13:02.912  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-17 12:13:02.912  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 12:13:02.912  INFO 9788 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-17 12:13:02.933  INFO 9788 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-17 12:13:02.934  INFO 9788 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Started ManagedocApplication in 1.667 seconds (JVM running for 256.888)
+2018-05-17 12:13:02.935  INFO 9788 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-05-17 12:13:11.361  INFO 9788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-17 12:13:11.361  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 12:13:11.368  INFO 9788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-05-17 12:13:11.400  INFO 9788 --- [http-nio-8080-exec-2] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:13:14.170  INFO 9788 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-17 12:13:14.194  INFO 9788 --- [http-nio-8080-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    829512 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1193253 nanoseconds spent preparing 1 JDBC statements;
+    364345 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:13:14.285  INFO 9788 --- [http-nio-8080-exec-4] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:13:26.306  INFO 9788 --- [http-nio-8080-exec-5] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 12:14:16.628  INFO 9788 --- [Thread-20] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77997c8f: startup date [Thu May 17 12:13:01 BDT 2018]; root of context hierarchy
+2018-05-17 12:14:16.636  INFO 9788 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-17 12:14:16.636  INFO 9788 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-17 12:14:16.636  INFO 9788 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 12:14:16.636  INFO 9788 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2018-05-17 12:14:16.636  INFO 9788 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2018-05-17 14:26:38.757  INFO 9960 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on DESKTOP-CDMVN38 with PID 9960 (E:\Spring\dms\target\classes started by ripan in E:\Spring\dms)
+2018-05-17 14:26:38.758  INFO 9960 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 14:26:38.840  INFO 9960 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33c0f2e3: startup date [Thu May 17 14:26:38 BDT 2018]; root of context hierarchy
+2018-05-17 14:26:41.090  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b7bf293d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.147  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$506cf177] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.158  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.160  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@71782305' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.169  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$75419429] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.182  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:26:41.580 ERROR 9960 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:26:41.746  INFO 9960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 14:26:41.876 ERROR 9960 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:26:41.889  INFO 9960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 14:26:41.889  INFO 9960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 14:26:41.898 ERROR 9960 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:26:42.063  INFO 9960 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 14:26:42.065  INFO 9960 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3225 ms
+2018-05-17 14:26:43.445  INFO 9960 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-05-17 14:26:43.741  INFO 9960 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-05-17 14:26:43.787  INFO 9960 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 14:26:43.816  INFO 9960 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 14:26:43.967  INFO 9960 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-05-17 14:26:43.971  INFO 9960 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-05-17 14:26:44.023  INFO 9960 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-17 14:26:44.237  INFO 9960 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 14:26:45.010  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.010  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.010  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.010  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.010  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.011  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:26:45.472  INFO 9960 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 14:26:45.569  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-17 14:26:45.569  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-17 14:26:45.569  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-17 14:26:45.570  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-17 14:26:45.570  INFO 9960 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-05-17 14:26:45.571  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-05-17 14:26:45.571  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-05-17 14:26:45.571  INFO 9960 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-17 14:26:45.904  INFO 9960 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:26:46.221  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33c0f2e3: startup date [Thu May 17 14:26:38 BDT 2018]; root of context hierarchy
+2018-05-17 14:26:46.311  WARN 9960 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-05-17 14:26:46.416  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/form],methods=[GET]}" onto public java.lang.String com.csinfotechbd.document.DocController.getDocUploadForm()
+2018-05-17 14:26:46.418  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/doc/upload],methods=[POST]}" onto public java.lang.String com.csinfotechbd.document.DocController.getUploadedDoc(com.csinfotechbd.document.DocBearer)
+2018-05-17 14:26:46.419  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.csinfotechbd.login.LoginController.getSignInPage(java.security.Principal)
+2018-05-17 14:26:46.424  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-17 14:26:46.425  INFO 9960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 14:26:46.503  INFO 9960 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:26:46.504  INFO 9960 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-17 14:26:47.638  INFO 9960 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4854daa4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c42de7f, org.springframework.security.web.header.HeaderWriterFilter@7d43e4ca, org.springframework.security.web.csrf.CsrfFilter@c931a1a, org.springframework.security.web.authentication.logout.LogoutFilter@4f14496, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13137357, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@338c8ee0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1d86ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2299ea7c, org.springframework.security.web.session.SessionManagementFilter@42f0ccb2, org.springframework.security.web.access.ExceptionTranslationFilter@6d48a69, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@428eaee0]
+2018-05-17 14:26:47.754  INFO 9960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-05-17 14:26:47.773  INFO 9960 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-05-17 14:26:47.784  INFO 9960 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 14:26:47.785  INFO 9960 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-05-17 14:26:47.786  INFO 9960 --- [restartedMain] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-17 14:26:47.848  INFO 9960 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-17 14:26:47.849  INFO 9960 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-05-17 14:26:47.863  INFO 9960 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-05-17 14:26:48.303  INFO 9960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-17 14:26:48.323  INFO 9960 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Started ManagedocApplication in 10.036 seconds (JVM running for 10.952)
+2018-05-17 14:26:51.839 ERROR 9960 --- [http-nio-8080-exec-10] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:26:51.859  INFO 9960 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-17 14:26:51.859  INFO 9960 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-17 14:26:51.890  INFO 9960 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-05-17 14:26:52.698  INFO 9960 --- [http-nio-8080-exec-10] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 14:27:00.327  INFO 9960 --- [http-nio-8080-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-05-17 14:27:00.665  INFO 9960 --- [http-nio-8080-exec-8] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    1235592 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    21750750 nanoseconds spent preparing 1 JDBC statements;
+    10249881 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 14:27:01.039  INFO 9960 --- [http-nio-8080-exec-7] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 14:27:14.895  INFO 9960 --- [http-nio-8080-exec-3] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2018-05-17 14:37:06.292  INFO 9960 --- [Thread-8] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33c0f2e3: startup date [Thu May 17 14:26:38 BDT 2018]; root of context hierarchy
+2018-05-17 14:37:06.298  INFO 9960 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-05-17 14:37:06.301  INFO 9960 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-05-17 14:37:06.303  INFO 9960 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-17 14:37:06.306  INFO 9960 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-05-17 14:37:06.323  INFO 9960 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-05-17 14:37:07.018  INFO 9960 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : Starting ManagedocApplication on DESKTOP-CDMVN38 with PID 9960 (E:\Spring\dms\target\classes started by ripan in E:\Spring\dms)
+2018-05-17 14:37:07.019  INFO 9960 --- [restartedMain] com.csinfotechbd.ManagedocApplication    : The following profiles are active: dev
+2018-05-17 14:37:07.022  INFO 9960 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a8f011e: startup date [Thu May 17 14:37:07 BDT 2018]; root of context hierarchy
+2018-05-17 14:37:08.228  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b7bf293d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.240  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$506cf177] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.252  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.253  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3f71c136' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.259  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$75419429] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.260  INFO 9960 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-17 14:37:08.404 ERROR 9960 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:37:08.592  INFO 9960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-17 14:37:08.598 ERROR 9960 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:37:08.599  INFO 9960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-17 14:37:08.599  INFO 9960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-05-17 14:37:08.619 ERROR 9960 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.2.7] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2018-05-17 14:37:08.664  INFO 9960 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-17 14:37:08.665  INFO 9960 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1642 ms
+2018-05-17 14:37:09.717  INFO 9960 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-05-17 14:37:09.907  INFO 9960 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-05-17 14:37:09.920  INFO 9960 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-17 14:37:09.920  INFO 9960 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-17 14:37:09.941  INFO 9960 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-05-17 14:37:10.156  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#lastName; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.157  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#docEntities; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.161  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#password; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.162  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#userId; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.162  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#active; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.162  WARN 9960 --- [localhost-startStop-1] o.h.metamodel.internal.MetadataContext   : HHH015011: Unable to locate static metamodel field : com.csinfotechbd.users.User_#firstName; this may or may not indicate a problem with the static metamodel
+2018-05-17 14:37:10.762  INFO 9960 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
