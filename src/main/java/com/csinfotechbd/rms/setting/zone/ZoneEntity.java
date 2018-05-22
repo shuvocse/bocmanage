@@ -27,12 +27,13 @@ public class ZoneEntity extends BaseProperty{
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxWarehouse=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
+
     @Getter
     @Setter
     @Column(unique = true)
-    private String znUniCode;
+    private String trackingId;
 
     @Getter
     @Setter
@@ -46,7 +47,6 @@ public class ZoneEntity extends BaseProperty{
 
     public ZoneEntity(long id, String title,String description, String znUniCode, CountryEntity countryEntity) {
         this.title = title;
-        this.znUniCode = znUniCode;
         this.countryEntity = countryEntity;
         this.description = description;
     }

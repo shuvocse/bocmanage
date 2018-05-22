@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.shelfsBox;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.columnseShelf.ColumnseShelfEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_column_shelf_box")
-public class ShelfBoxEntity {
+public class ShelfBoxEntity extends BaseProperty{
 
     @Getter
     @Setter
@@ -25,20 +26,16 @@ public class ShelfBoxEntity {
     @Setter
     private String description;
 
+
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxRecord=1;
-
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String bxUniCode;
-
-    @Getter
-    @Setter
-    private int capacity;
+    private String trackingId;
 
 
     @Getter

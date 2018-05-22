@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.columnseShelf;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.rowsColumn.RowsColumnEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_columnse_shelf")
-public class ColumnseShelfEntity {
+public class ColumnseShelfEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -25,13 +26,13 @@ public class ColumnseShelfEntity {
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxBox=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String shUniCode;
+    private String trackingId;
 
     @Getter
     @Setter
@@ -43,7 +44,6 @@ public class ColumnseShelfEntity {
     public ColumnseShelfEntity(long id, String name, String shUniCode, RowsColumnEntity centerColumnEntity) {
         this.shelfId = id;
         this.title = name;
-        this.shUniCode = shUniCode;
         this.centerColumnEntity = centerColumnEntity;
     }
 
@@ -52,7 +52,6 @@ public class ColumnseShelfEntity {
         return "ColumnseShelfEntity{" +
                 "shelfId=" + shelfId +
                 ", name='" + title + '\'' +
-                ", code='" + shUniCode + '\'' +
                 ", centerColumnEntity=" + centerColumnEntity +
                 '}';
     }

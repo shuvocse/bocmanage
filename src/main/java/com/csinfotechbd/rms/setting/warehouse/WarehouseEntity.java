@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.warehouse;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.country.CountryEntity;
 import com.csinfotechbd.rms.setting.zone.ZoneEntity;
 import lombok.Getter;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_warehouse")
-public class WarehouseEntity {
+public class WarehouseEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -26,13 +27,13 @@ public class WarehouseEntity {
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxCenter=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String wrhUniCode;
+    private String trackingId;
 
     @Getter
     @Setter
@@ -45,7 +46,6 @@ public class WarehouseEntity {
         return "WarehouseEntity{" +
                 "warehouseId=" + warehouseId +
                 ", name='" + title + '\'' +
-                ", code='" + wrhUniCode + '\'' +
                 ", zoneEntity=" + zoneEntity +
                 '}';
     }
@@ -53,7 +53,6 @@ public class WarehouseEntity {
     public WarehouseEntity(long id, String title, String code, ZoneEntity zoneEntity) {
         this.warehouseId = id;
         this.title = title;
-        this.wrhUniCode = code;
         this.zoneEntity = zoneEntity;
     }
 }

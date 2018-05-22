@@ -17,8 +17,8 @@ public class RecordDao {
     public List<RecordEntity> getList() {
         List<RecordEntity> recordObjList = new ArrayList<RecordEntity>();
         ShelfBoxEntity shelfBoxEntityObj = new ShelfBoxEntity(1, "BOX-NO-01", "BOX-CD-001", 10, new ColumnseShelfEntity());
-        recordObjList.add(new RecordEntity(1, "RD-001", "Electronic bill", "Bill","Company", "Bill-ref", "Bill for May", new Date(), new Date(), shelfBoxEntityObj));
-        recordObjList.add(new RecordEntity(1, "RD-002", "Gash bill", "Bill","Company", "Bill-ref", "Bill for April", new Date(), new Date(), shelfBoxEntityObj));
+//        recordObjList.add(new RecordEntity(1, "RD-001", "Electronic bill", "Bill","Company", "Bill-ref", "Bill for May", new Date(), new Date(), shelfBoxEntityObj));
+//        recordObjList.add(new RecordEntity(1, "RD-002", "Gash bill", "Bill","Company", "Bill-ref", "Bill for April", new Date(), new Date(), shelfBoxEntityObj));
          return recordObjList;
     }
 

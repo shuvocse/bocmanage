@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.rowsColumn;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.centereasRow.CentereasRowEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_rows_column")
-public class RowsColumnEntity {
+public class RowsColumnEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -25,13 +26,13 @@ public class RowsColumnEntity {
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxShelf=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String clmUniCode;
+    private String trackingId;
 
 
     @Getter
@@ -44,7 +45,6 @@ public class RowsColumnEntity {
     public RowsColumnEntity(long id, String title, String clmUniCode, CentereasRowEntity centerRowEntity) {
         this.columnId = id;
         this.title = title;
-        this.clmUniCode = clmUniCode;
         this.centerRowEntity = centerRowEntity;
     }
 }

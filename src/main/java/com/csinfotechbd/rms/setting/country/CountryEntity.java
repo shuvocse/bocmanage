@@ -31,14 +31,19 @@ public class CountryEntity extends BaseProperty{
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxZone=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
+
+    @Getter
+    @Setter
+    @Column(unique = true)
+    private String trackingId;
 
     public CountryEntity(){}
 
-    public CountryEntity(long countryId,String title,String description, String cuntCode, int maxZone) {
+    public CountryEntity(long countryId,String title,String description, String cuntCode, int capacity) {
         this.countryId = countryId;
-        this.maxZone = maxZone;
+        this.capacity = capacity;
         this.title = title;
         this.description = description;
         this.cuntCode = cuntCode;

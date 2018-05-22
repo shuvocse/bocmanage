@@ -26,13 +26,13 @@ public class CentereasRowEntity extends BaseProperty{
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxClm=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String rowUniCode;
+    private String trackingId;
 
     @Getter
     @Setter
@@ -44,7 +44,6 @@ public class CentereasRowEntity extends BaseProperty{
     public CentereasRowEntity(long id, String title, String rowUniCode, CenterEntity centerEntity) {
         this.rowId = id;
         this.title = title;
-        this.rowUniCode = rowUniCode;
         this.centerEntity = centerEntity;
     }
 
@@ -53,7 +52,6 @@ public class CentereasRowEntity extends BaseProperty{
         return "CentereasRowEntity{" +
                 "rowId=" + rowId +
                 ", name='" + title + '\'' +
-                ", code='" + rowUniCode + '\'' +
                 ", centerEntity=" + centerEntity +
                 '}';
     }

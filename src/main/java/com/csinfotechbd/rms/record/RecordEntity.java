@@ -24,6 +24,11 @@ public class RecordEntity extends BaseProperty{
 
     @Getter
     @Setter
+    @Column(unique = true)
+    private String trackingId;
+
+    @Getter
+    @Setter
     @Column(nullable = false)
     private String title;
 
@@ -45,13 +50,6 @@ public class RecordEntity extends BaseProperty{
     @Setter
     private String recordComment;
 
-    @Getter
-    @Setter
-    private Date lastUpdate;
-
-    @Getter
-    @Setter
-    private Date lastPrint;
 
 
     @Getter
@@ -61,7 +59,7 @@ public class RecordEntity extends BaseProperty{
     private ShelfBoxEntity shelfBoxEntity;
 
     public RecordEntity(){}
-    public RecordEntity(long id, String serialNo, String title, String recordType, String recordCategory, String reference, String comment, Date lastUpdate, Date lastPrint, ShelfBoxEntity shelfBoxEntity) {
+    public RecordEntity(long id, String serialNo, String title, String recordType, String recordCategory, String reference, String comment, ShelfBoxEntity shelfBoxEntity) {
         this.recordId = id;
         this.serialNo = serialNo;
         this.title = title;
@@ -69,8 +67,6 @@ public class RecordEntity extends BaseProperty{
         this.recordCategory = recordCategory;
         this.recordReference = reference;
         this.recordComment = comment;
-        this.lastUpdate = lastUpdate;
-        this.lastPrint = lastPrint;
         this.shelfBoxEntity = shelfBoxEntity;
     }
 
@@ -84,8 +80,6 @@ public class RecordEntity extends BaseProperty{
                 ", recordCategory='" + recordCategory + '\'' +
                 ", reference='" + recordReference + '\'' +
                 ", comment='" + recordComment + '\'' +
-                ", lastUpdate=" + lastUpdate +
-                ", lastPrint=" + lastPrint +
                 ", shelfBoxEntity=" + shelfBoxEntity +
                 '}';
     }

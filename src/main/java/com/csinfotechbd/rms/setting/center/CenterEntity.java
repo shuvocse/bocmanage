@@ -1,5 +1,6 @@
 package com.csinfotechbd.rms.setting.center;
 
+import com.csinfotechbd.base.BaseProperty;
 import com.csinfotechbd.rms.setting.warehouse.WarehouseEntity;
 import com.csinfotechbd.rms.setting.zone.ZoneEntity;
 import lombok.Getter;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "rms_setting_center")
-public class CenterEntity {
+public class CenterEntity extends BaseProperty{
     @Getter
     @Setter
     @Id
@@ -26,13 +27,13 @@ public class CenterEntity {
 
     @Getter
     @Setter
-    @Column(nullable = false)
-    private int maxRow=1;
+    @Column(nullable = false, columnDefinition = "int default 1")
+    private int capacity=1;
 
     @Getter
     @Setter
     @Column(unique = true)
-    private String centUniCode;
+    private String trackingId;
 
 
     @Getter
@@ -45,7 +46,6 @@ public class CenterEntity {
     public CenterEntity(long id, String title, String centUniCode, WarehouseEntity warehouseEntity) {
         this.centerId = id;
         this.title = title;
-        this.centUniCode = centUniCode;
         this.warehouseEntity = warehouseEntity;
     }
 
@@ -54,7 +54,6 @@ public class CenterEntity {
         return "CenterEntity{" +
                 "centerId=" + centerId +
                 ", name='" + title + '\'' +
-                ", code='" + centUniCode + '\'' +
                 ", warehouseEntity=" + warehouseEntity +
                 '}';
     }
